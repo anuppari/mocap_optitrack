@@ -57,7 +57,7 @@ void processMocapData( const char** mocap_model, RigidBodyMap& published_rigid_b
       {
         const char* buffer = multicast_client_socket.getBuffer();
         unsigned short header = *((unsigned short*)(&buffer[0]));
-
+        
         // Look for the beginning of a NatNet package
         if (header == 7)
         {
@@ -66,6 +66,7 @@ void processMocapData( const char** mocap_model, RigidBodyMap& published_rigid_b
           format.parse();
           packetread = true;
           numberOfPackets++;
+          
 
           if( format.model.numRigidBodies > 0 )
           {

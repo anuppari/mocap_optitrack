@@ -4,12 +4,42 @@
 #
 rigid_bodies:
     '1':
-        pose: Robot_1/pose
-        pose2d: Robot_1/ground_pose
-        child_frame_id: Robot_1/base_link
+        pose: camera/pose
+        pose2d: camera/ground_pose
+        child_frame_id: camera
         parent_frame_id: world
     '2':
-        pose: Robot_2/pose
-        pose2d: Robot_2/ground_pose
-        frame_id: Robot_2/base_link
+        pose: board/pose
+        pose2d: board/ground_pose
+        child_frame_id: board
+        parent_frame_id: world
+    '3':
+        pose: ugv0/pose
+        pose2d: ugv0/ground_pose
+        child_frame_id: ugv0
+        parent_frame_id: world
+    '4':
+        pose: ugv1/pose
+        pose2d: ugv1/ground_pose
+        child_frame_id: ugv1
+        parent_frame_id: world
+    '5':
+        pose: ugv2/pose
+        pose2d: ugv2/ground_pose
+        child_frame_id: ugv2
+        parent_frame_id: world
+    '6':
+        pose: ugv3/pose
+        pose2d: ugv3/ground_pose
+        child_frame_id: ugv3
+        parent_frame_id: world
+    '7':
+        pose: ugv4/pose
+        pose2d: ugv4/ground_pose
+        child_frame_id: ugv4
+        parent_frame_id: world
+    '8':
+        pose: ardrone/pose
+        pose2d: ardrone/ground_pose
+        child_frame_id: ardrone
         parent_frame_id: world
